@@ -42,7 +42,7 @@ Last Updated on \today
 \newcommand{\namesection}[3]{
 \centering{
 \color{teal}
-\fontsize{30pt}{50pt}
+\fontsize{35pt}{50pt}
 \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
 \color{gray}
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
@@ -77,10 +77,15 @@ Last Updated on \today
 
 % Location command
 \newcommand{\location}[1]{
-\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
+\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1} \normalfont}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
+% Box Skills
+\usepackage{tikz}
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=black!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+}
