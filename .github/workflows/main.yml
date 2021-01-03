@@ -36,6 +36,6 @@ jobs:
         run: |
           git config --global user.name "Action Bot"
           git config --global user.email "danielkweber1@gmail.com"
-          git add resume/resume.pdf
+          git add /home/runner/work/resume/resume/resume.pdf
           git commit -m "Built PDF"
           git push
