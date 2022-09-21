@@ -66,26 +66,47 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{Daniel}{Weber}{ \urlstyle{same}
-\href{mailto:dweber11@jhu.edu}{dweber11@jhu.edu} | 917.200.7111 | 184 Ardmore Ave, Staten Island, NY 10314
+\href{mailto:dweber11@jhu.edu}{\underline{dweber11@jhu.edu}} | 917.200.7111 | \href{https://www.linkedin.com/in/daniel-k-weber/}{\underline{linkedin/daniel-k-weber}} | \href{https://github.com/Danielkweber}{\underline{github/danielkweber}} 
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN ONE
-%
+%     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+\runsubsection{Johns Hopkins University}
+\location{May 2023 | Baltimore, Maryland }
 
-\begin{minipage}[t]{0.64\textwidth} 
+\descript{BS Computer Science | BS Applied Mathematics and Statistics | BA Mathematics}
+
+\location{\quad | GPA: 3.98 / 4.0 \quad | Major GPA: 4.0 / 4.0 \quad |  Dean's List (2019-2023) }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+\runsubsection{Handshake}
+\descript{| Software Engineer Intern } 
+\qquad \quad \location{June 2022 – Aug. 2022 | San Francisco, California (Remote)}
+\begin{tightemize}
+    \item Proposed an initiative to scale event publishing infrastructure 
+    via sharding to achieve an over 10X increase in throughput.
+    \item Autoscaled Kubernetes deployments using Datadog metrics to reliably 
+    ensure event processing within minutes of publishing.
+    \item Proposed and implemented a Google Pub/Sub publishing interface that allows 
+    developers to asynchronously publish events while maintaining ordering and data 
+    consistency.
+    \item Collaborated with developers both on and off-team to push cross-functional goals 
+    which improved organizational efficiency and the user-facing experience.
+    \item Increased the observability of our publishing systems by designing and integrating effective traces/metrics  
+    which allowed myself and peer developers to identify problems thus sparking new engineering initiatives.
+    \item Technologies: Ruby, Rails, GCP, Google Pub/Sub, Kubernetes, Helm, Datadog, Github
+    \end{tightemize}
+\sectionsep
+
 \runsubsection{Amazon.com}
 \descript{| Software Engineer Intern }
-\location{May 2021 - Aug. 2021 | Seattle, Washington}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\qquad\qquad\qquad\qquad\quad \location{May 2021 – Aug. 2021 | Seattle, Washington}
 \begin{tightemize}
     \item Designed and implemented a heap dump analysis tool to aid developers in the
     optimization of processes utilizing over 250GB of heap memory.
@@ -93,53 +114,28 @@
     to find the pain points in the existing optimization process.
     \item Implemented automation to give developers easy access to up-to-date 
     heap dump files, shortening an 8 hour process to a minutes long task.
-    \item Leveraged continuous development/integration to develop an extensible
+    \item Leveraged CI/CD technology to develop an extensible
     and resilient platform that can evolve with changing business needs.
     \item Technologies: Java, AWS, CodePipelines, Git
     \end{tightemize}
 \sectionsep
 
-\runsubsection{Zenner}
-\descript{| Machine Learning Intern }
-\location{May 2020 - Sept. 2020 | Tel Aviv, Israel}
+\runsubsection{Distributed Systems/Networks Lab} \href{http://www.dsn.jhu.edu/courses/cs310/power-grid/}{\faExternalLink}
+\descript{| Security Researcher}
+\location{Jan. 2021 – May 2021 | Johns Hopkins}
 \begin{tightemize}
-    \item Created a high performance NLU chatbot that enabled customers to seamlessly 
-    manage their travel experience.
-    \item Integrated with travel industry APIs to predict flight delays and proactively
-    notify customers.
-    \item Technologies: Python, Javascript, Tensorflow, Rasa, Docker, Google Cloud
-    \end{tightemize}
-\sectionsep
-
-\runsubsection{David Energy}
-\descript{| Machine Learning Engineer }
-\location{July 2019 – Sept. 2019 | Brooklyn, New York}
-\begin{tightemize}
-\item Curated an extensive dataset of electricity usage predictors from
-both internal and external sources.
-\item Developed machine learning models to predict a building's electricity demand with 97\% 
-accuracy and deployed said models to allow for real-time prediction and scalability.
-\item Architected an AWS cloud solution to allow the company's resources to scale with demand.
-\item Technologies: Python, Git, Tensorflow, Scikit-Learn, AWS
+    \item Curated a deep understanding of a large, intricate code base thus allowing me
+    to demonstate key security vulnerabilities at both a protocol and implementation level.
+    \item Crafted a resource consumption attack which downed SPIRE, a fault-tolerant 
+    distributed system designed to securely control the US power grid, in under 20 minutes.
+    \item Presented the discovered vulnerabilities and attacks to the Department of Defense
+    who have used it to futher enhance SPIRE.
 \end{tightemize}
 \sectionsep
 
-\section{Student Involvement}
-\runsubsection{SPIRE - Resiliency for the US Power Grid}
-\descript{}
-\location{Jan. 2021 – May 2021 }
-\begin{tightemize}
-    \item Performed red-team attacks against SPIRE, a distributed system which aims to
-    build a US power grid that is resilient to cyberattacks.
-    \item Demonstrated a resource consumption attack capable of taking the system down 
-    in under 20 minutes.
-    \item Worked with the Department of Defense on further attacks and mitigations.
-\end{tightemize}
-\sectionsep
-
-\runsubsection{TA - Algorithms/Computer System Fundamentals}
-\descript{}
-\location{Sept. 2020 – October 2021 }
+\runsubsection{Algorithms/CS Fundamentals} 
+\descript{| Teacher's Assistant}
+\qquad \quad \location{Sept. 2020 – October 2021 | Johns Hopkins}
 \begin{tightemize}
     \item Taught students key algorithmic concepts like complexity analysis, 
     dynamic programming, and graph traversal while holding office hours and grading HW.
@@ -148,83 +144,42 @@ accuracy and deployed said models to allow for real-time prediction and scalabil
 \end{tightemize}
 \sectionsep
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PUBLICATIONS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Publications} 
-\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
-\bibliographystyle{abbrv}
-{\footnotesize
-\bibliography{publications}}
-\nocite{*}
-
-\end{minipage} 
-\hfill
-\begin{minipage}[t]{0.33\textwidth} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Column 2
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Education} 
-
-\subsection{Johns Hopkins University}
-\descript{BS Computer Science}
-\descript{BS Applied Math and Statistics}
-\descript{BA Pure Mathematics}
-\location{Expected May 2023 | Batimore, MD}
-
-Whiting School of Engineering
-
-\location{ Cum. GPA: 3.97 / 4.0 }
-\location{ Major GPA: 4.0 }
+\runsubsection{Faye}
+\descript{| Machine Learning Intern }
+\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\location{May 2020 - Sept. 2020 | Tel Aviv, Israel}
+\begin{tightemize}
+    \item Created a transformer-powered NLU chatbot to replace an 
+    off-the-shelf rule-based Google Dialogflow model that dramatically 
+    improved customer workflows through context-aware responses and actions.  
+    \item Technologies: Python, Javascript, Tensorflow, Rasa, Docker, Google Cloud
+    \end{tightemize}
 \sectionsep
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Links} 
-Github:// \href{https://github.com/Danielkweber}{\bf danielkweber} \\
-LinkedIn://  \href{https://www.linkedin.com/in/daniel-k-weber/}{\bf daniel-k-weber} \\
-SPIRE:// \href{http://www.dsn.jhu.edu/courses/cs310/power-grid/}{\bf Attack Demonstration}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Coursework}
-
-\subsection{Undergraduate}
-\cvtag{Introduction to Algorithms} \\
-\cvtag{Data Structures} \\
-\cvtag{Computer System Fundamentals} \\
-\cvtag{Honors Discrete Math} \\
-\cvtag{Honors Linear Algebra} \\
-\cvtag{Intro to Optimization} \\
-\cvtag{Computer Graphics} \\
-\cvtag{Honors Multivariable Calculus} \\
-\sectionsep
+\runsubsection{David Energy}
+\descript{| Machine Learning Engineer }
+\qquad\qquad\qquad\qquad\location{July 2019 – Sept. 2019 | Brooklyn, New York}
+\begin{tightemize}
+\item Curated an extensive dataset of high-quality electricity usage predictors from
+both internal and external sources.
+\item Developed machine learning models to predict a building's electricity demand with 97\% 
+accuracy and deployed said models to allow for real-time electricity usage prediction.
+\item Architected a secure AWS cloud solution to allow the company's infastructure to scale 
+as more customers joined the platform.
+\item Technologies: Python, Git, Tensorflow, Scikit-Learn, AWS
+\end{tightemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\subsection{Languages}
+\vspace{-5pt}
+\location{Languages:} 
 \cvtag{Python}    
 \cvtag{Java} 
 \cvtag{C}  
-\cvtag{C++}  
+\cvtag{C++}
+\cvtag{Ruby}  
 \cvtag{Go} 
 \cvtag{Javascript} 
 \cvtag{Matlab} 
@@ -232,32 +187,21 @@ SPIRE:// \href{http://www.dsn.jhu.edu/courses/cs310/power-grid/}{\bf Attack Demo
 \cvtag{\LaTeX}  
 \cvtag{x86 Assembly}
 
-\vspace{\topsep}
-\subsection{Technologies}
+\location{Technologies:}
 \cvtag{Git} 
-\cvtag{AWS/Google Cloud} 
+\cvtag{AWS-Certified}
+\cvtag{Google Cloud}
+\cvtag{Kubernetes} 
 \cvtag{Docker}
 \cvtag{OOP} 
-\cvtag{Node.js}
-\cvtag{Express.js}
-\cvtag{Django}
-\cvtag{MongoDB}
+\cvtag{Rails}
 \cvtag{Postgre}
 \cvtag{TensorFlow}
 
-\vspace{\topsep}
-\subsection{Hobbys/Interests}
+\location{Hobbys/Interests:}
 \cvtag{Cycling} 
 \cvtag{Hiking}  
 \cvtag{Coffee Drinking}
 \cvtag{Concertgoing}
 \cvtag{Piano Playing}
-\sectionsep
-
-\section{Certifications}
-\cvtag{Dean's List} 
-\cvtag{AWS-Certified}
-
-
-\end{minipage} 
 \end{document}  \documentclass[]{article}
