@@ -1,14 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.2 (16/9/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
 %
 % This template uses several fonts not included with Windows/Linux by
@@ -16,37 +6,13 @@
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
 % 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
+\usepackage{ragged2e}
  
 \pagestyle{fancy}
 \fancyhf{}
@@ -66,47 +32,58 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{Daniel}{Weber}{ \urlstyle{same}
-\href{mailto:dweber11@jhu.edu}{\underline{dweber11@jhu.edu}} | 917.200.7111 | \href{https://www.linkedin.com/in/daniel-k-weber/}{\underline{linkedin/daniel-k-weber}} | \href{https://github.com/Danielkweber}{\underline{github/danielkweber}} 
+\href{mailto:daniel@modulolabs.ai}{\underline{daniel@modulolabs.ai}} | 917.200.7111 | \href{https://www.linkedin.com/in/daniel-k-weber/}{\underline{linkedin/daniel-k-weber}} | \href{https://github.com/Danielkweber}{\underline{github/danielkweber}} 
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Education} 
-\runsubsection{Johns Hopkins University}
-\location{May 2023 | Baltimore, Maryland }
-
-\descript{BS Computer Science | BS Applied Mathematics and Statistics | BA Mathematics}
-
-\location{\quad | GPA: 3.99 / 4.0 \quad | Major GPA: 4.0 / 4.0 \quad |  Dean's List (2019-2023) }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summary}
+
+{\justifying
+{
+\large Technical leader with deep expertise in AI/ML and cloud architecture, specializing in building innovative solutions at early-stage startups, including co-founding one of the first content platforms for Apple Vision Pro. Proven track record of leading technical teams from concept to market and developing novel AI and software applications that reduced operational costs by 90\%+ while maintaining enterprise-grade reliability.}
+\par}
 
 \section{Experience}
-\runsubsection{Handshake}
-\descript{| Software Engineer Intern } 
-\qquad \quad \location{June 2022 – Aug. 2022 | San Francisco, California (Remote)}
+\runsubsection{Spatial.tv / Radia.ai}
+\descript{| Co-Founder / CTO} 
+\hfill \location{June 2024 – December 2024 | New York, NY}
 \begin{tightemize}
-    \item Proposed an initiative to scale event publishing infrastructure 
-    via sharding to achieve an over 10X increase in throughput.
-    \item Autoscaled Kubernetes deployments using Datadog metrics to reliably 
-    ensure event processing within minutes of publishing.
-    \item Proposed and implemented a Google Pub/Sub publishing interface that allows 
-    developers to asynchronously publish events while maintaining ordering and data 
-    consistency.
-    \item Collaborated with developers both on and off-team to push cross-functional goals 
-    which improved organizational efficiency and the user-facing experience.
-    \item Increased the observability of our publishing systems by designing and integrating effective traces/metrics  
-    which allowed myself and peer developers to identify problems thus sparking new engineering initiatives.
-    \item Technologies: Ruby, Rails, GCP, Google Pub/Sub, Kubernetes, Helm, Datadog, Github
+    \item Led a 3-person team in developing one of the first immersive content sharing platforms for Apple Vision Pro which combined 3D models, immersive video, and dynamic environments to unlock wholly new user experiences.
+    \item Architected an AWS cloud solution utilizing Lambda, S3, and Cloudfront to provide HTTP Live Streaming (HLS) for spatial video content, reducing loading and buffering times by over 90\%.
+    \item Spearheaded user outreach and conducted 50+ user interviews, which led to multiple new operational and strategic initiatives that more than doubled user engagement.
+    \item Proposed and developed novel AI methods for dynamic scene reconstruction based on NeRF and Gaussian Splatting reducing content creation time and cost by 99\%.
+    \item Led company's strategic pivot from B2C to B2B, securing our first partnership with a major Hollywood production studio to use our novel AI technology.
     \end{tightemize}
-\sectionsep
 
-\runsubsection{Amazon.com}
+\sectionsep
+\runsubsection{Construct.ai}
+\descript{| Founding Engineer} 
+\hfill \location{January 2024 – May 2024 | New York, NY}
+\begin{tightemize}
+    \item Architected and launched an LLM-powered application platform enabling no-code app creation, scaling to a 1,000+ user-generated applications within 7 days of launch.
+    \item Engineered high-performance semantic search engine using a pgvector DB, allowing users to query across 100,000+ emails and 5+ inboxes in under a second.
+    \item Built GPT-4 powered executive assistant platform with custom prompt engineering and chain-of-thought reasoning, automating email management tasks and saving clients 5+ hours weekly.
+    \item Partnered with C-suite to define product roadmap and GTM strategy, leading to identification of key market segments with \$50M+ annual revenue potential.
+    \end{tightemize}
+
+\sectionsep
+\runsubsection{AccessOS}
+\descript{| Founding Engineer} 
+\hfill \location{May 2023 – January 2024 | San Francisco, CA}
+\begin{tightemize}
+    \item Architected and maintained critical access control integrations with Azure and AWS IAM, managing security permissions for 3,000+ enterprise employees while enabling security teams to quarantine suspicious accounts within seconds of detection.
+    \item Led development of automated access review platform that reduced customer audit times by 90\%, saving enterprise clients an average of 200 hours per quarter and increasing compliance accuracy to 99.9\%.
+    \item Supported 24/7 security incident response for enterprise clients, achieving a 100\% resolution rate with zero data breaches and average response time under 8 minutes.
+    \item Led 2-month strategic wind-down of our SaaS platform while maintaining 99.9\% uptime for enterprise customers, orchestrating data migration for our clients, and achieving 100\% contractual obligations.
+    \end{tightemize}
+
+\sectionsep
+\runsubsection{Amazon}
 \descript{| Software Engineer Intern }
-\qquad\qquad\qquad\qquad\quad \location{May 2021 – Aug. 2021 | Seattle, Washington}
+\hfill \location{May 2021 – August 2021 | Seattle, WA}
 \begin{tightemize}
     \item Designed and implemented a heap dump analysis tool to aid developers in the
     optimization of processes utilizing over 250GB of heap memory.
@@ -114,94 +91,43 @@
     to find the pain points in the existing optimization process.
     \item Implemented automation to give developers easy access to up-to-date 
     heap dump files, shortening an 8 hour process to a minutes long task.
-    \item Leveraged CI/CD technology to develop an extensible
-    and resilient platform that can evolve with changing business needs.
-    \item Technologies: Java, AWS, CodePipelines, Git
-    \end{tightemize}
-\sectionsep
+\end{tightemize} 
 
-\runsubsection{Distributed Systems/Networks Lab} \href{http://www.dsn.jhu.edu/courses/cs310/power-grid/}{\faExternalLink}
-\descript{| Security Researcher}
-\location{Jan. 2021 – May 2021 | Johns Hopkins}
-\begin{tightemize}
-    \item Curated a deep understanding of a large, intricate code base thus allowing me
-    to demonstate key security vulnerabilities at both a protocol and implementation level.
-    \item Crafted a resource consumption attack which downed SPIRE, a fault-tolerant 
-    distributed system designed to securely control the US power grid, in under 20 minutes.
-    \item Presented the discovered vulnerabilities and attacks to the Department of Defense
-    who have used it to futher enhance SPIRE.
-\end{tightemize}
-\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+\runsubsection{Johns Hopkins University}
+\location{May 2023 | Baltimore, Maryland}
 
-\runsubsection{Algorithms/CS Fundamentals} 
-\descript{| Teacher's Assistant}
-\qquad \location{Sept. 2020 – October 2021 | Johns Hopkins}
-\begin{tightemize}
-    \item Taught students key algorithmic concepts like complexity analysis, 
-    dynamic programming, and graph traversal while holding office hours and grading HW.
-    \item Educated students in low-level computing concepts like data representation, 
-    memory safety, and parallelism while performing code reviews.
-\end{tightemize}
-\sectionsep
+\descript{BS Computer Science | BS Applied Mathematics and Statistics | BA Mathematics}
 
-\runsubsection{Faye}
-\descript{| Machine Learning Intern }
-\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\location{May 2020 - Sept. 2020 | Tel Aviv, Israel}
-\begin{tightemize}
-    \item Created a transformer-powered NLU chatbot to replace an 
-    off-the-shelf rule-based Google Dialogflow model that dramatically 
-    improved customer workflows through context-aware responses and actions.  
-    \item Technologies: Python, Javascript, Tensorflow, Rasa, Docker, Google Cloud
-    \end{tightemize}
-\sectionsep
-
-\runsubsection{David Energy}
-\descript{| Machine Learning Engineer }
-\qquad\qquad\qquad\qquad\location{July 2019 – Sept. 2019 | Brooklyn, New York}
-\begin{tightemize}
-\item Curated an extensive dataset of high-quality electricity usage predictors from
-both internal and external sources.
-\item Developed machine learning models to predict a building's electricity demand with 97\% 
-accuracy and deployed said models to allow for real-time electricity usage prediction.
-\item Architected a secure AWS cloud solution to allow the company's infastructure to scale 
-as more customers joined the platform.
-\item Technologies: Python, Git, Tensorflow, Scikit-Learn, AWS
-\end{tightemize}
+\location{\quad | GPA: 3.99 / 4.0 \quad | Major GPA: 4.0 / 4.0 \quad |  Dean's List (2019-2023)}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\vspace{-5pt}
-\location{Languages:} 
 \cvtag{Python}    
+\cvtag{TypeScript} 
+\cvtag{React.js}
+\cvtag{SQL} 
+\cvtag{Pytorch}
+\cvtag{Deep Learning}
+\cvtag{AWS-Certified}
+\cvtag{Postgres}
 \cvtag{Java} 
 \cvtag{C}  
 \cvtag{C++}
-\cvtag{Ruby}  
-\cvtag{Go} 
-\cvtag{Javascript} 
-\cvtag{Matlab} 
-\cvtag{SQL} 
-\cvtag{\LaTeX}  
-\cvtag{x86 Assembly}
-
-\location{Technologies:}
+\cvtag{Technical Leadership}
+\cvtag{JavaScript} 
 \cvtag{Git} 
-\cvtag{AWS-Certified}
+\cvtag{sk-learn}
 \cvtag{Google Cloud}
 \cvtag{Kubernetes} 
 \cvtag{Docker}
-\cvtag{OOP} 
-\cvtag{Rails}
-\cvtag{Postgre}
 \cvtag{TensorFlow}
 
-\location{Hobbys/Interests:}
-\cvtag{Cycling} 
-\cvtag{Hiking}  
-\cvtag{Coffee Drinking}
-\cvtag{Concertgoing}
-\cvtag{Piano Playing}
-\end{document}  \documentclass[]{article}
+\end{document}
+

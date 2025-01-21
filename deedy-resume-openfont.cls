@@ -11,6 +11,8 @@
 % Package Imports
 \usepackage[hmargin=1cm, vmargin=0.75cm]{geometry}
 \usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{ragged2e}
 
 % Publications
 \usepackage{cite}
@@ -43,8 +45,8 @@ Last Updated on \today
 \newcommand{\namesection}[3]{
 \centering{
 \color{teal}
-\fontsize{30pt}{45pt}
-\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
+\fontsize{22pt}{35pt} 
+\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #1 
 \color{gray}
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 } \\[5pt]
@@ -63,7 +65,7 @@ Last Updated on \today
 
 % Headings command
 \titleformat{\section}{\color{teal}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{}{0em}{}
+\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{13pt}{21pt}\selectfont \raggedright\uppercase}{}{0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{
@@ -82,7 +84,7 @@ Last Updated on \today
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
+\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt \fontsize{10.7pt}{11.7pt}\selectfont}
 {\end{itemize}\vspace{-\topsep}}
 
 % Box Skills
